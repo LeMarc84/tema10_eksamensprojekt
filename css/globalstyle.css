@@ -1,0 +1,187 @@
+/*****General*****/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*****DISPLAY*****/
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/*****HEADER*****/
+
+.logo {
+    flex-basis: ;
+    object-fit: contain;
+    padding: ;
+    cursor: pointer;
+}
+
+.langDK,
+.langUK {
+    height: 32px;
+    max-width: 32px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/*****NAVIGATION*****/
+
+nav {
+    height: 8vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    background-color: rgba(0, 0, 0, .45);
+    font-family: '', sans-serif;
+    font-weight: 1.2rem;
+    font-style: normal;
+    position: fixed;
+    line-height: normal;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-left: 5%;
+    padding-right: 4%;
+    z-index: 1;
+}
+
+
+.nav-links {
+/*    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    align-items: center;*/
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    transition: all 0.3s ease 0s;
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #0088a9;
+    padding: 8px;
+}
+
+/*****BURGER*****/
+
+.burger {
+    display: block;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.burger div {
+    width: 23px;
+    height: 2px;
+    background-color: ;
+    margin: 5px 5px;
+    transition: all 0.5s ease;
+}
+
+/*****BURGERLINES*****/
+
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/*****SPLASH*****/
+
+#splash {
+    width: 100vw;
+display: none;
+    object-fit: contain;
+}
+
+/*****FONT COLORS*****/
+
+.white_text {
+    color: white;
+}
+
+.black_text {
+    color: black;
+}
+
+/*****Fonts*****/
+
+h1 {
+    font-family: '', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 56px;
+}
+
+h2 {
+    font-family: '', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 24px;
+}
+
+p {
+    font-weight: 300;
+    font-family: '', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*****Media Queries*****/
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #bcd4e6;
+    }
+
+    #eksempler .column {
+        flex-basis: 1050px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: #ffd300;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        background-color: #ffd300;
+    }
+}
