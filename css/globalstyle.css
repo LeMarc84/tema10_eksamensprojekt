@@ -26,48 +26,93 @@ img {
 
 /*****HEADER*****/
 
-.logo {
-    flex-basis: ;
-    object-fit: contain;
-    padding: ;
-    cursor: pointer;
+header {
+    margin: 0 auto;
 }
+
+.header_left {
+/*
+    display: flex;
+*/
+}
+
+.header_right {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_right ul {
+width: 100%;
+    margin-left: 40%
+}
+
+.logo {
+    position: absolute;
+    width: 10vw;
+    object-fit: contain;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.logo2 {
+    position: absolute;
+    width: 10vw;
+    object-fit: contain;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#logo:hover .logo2{
+display: block;
+}
+
+#logo:hover .logo{
+display: none;
+}
+/*.logotext {
+    width: 50vw;
+    height: 10vw;
+    object-fit: ;
+    padding: 15px;
+}*/
 
 .langDK,
 .langUK {
-    height: 32px;
-    max-width: 32px;
+    width: 32px;
+/*    height: 32px;*/
     cursor: pointer;
-    margin-left: 15px;
+    padding: 0;
+}
+
+#shoppingcart img {
+    width: 32px;
 }
 
 /*****NAVIGATION*****/
 
 nav {
-    height: 8vh;
+    height: 7vh;
     display: flex;
-    justify-content: flex-end;
-    align-items: right;
     background-color: rgba(0, 0, 0, .45);
-    font-family: '', sans-serif;
-    font-weight: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
     position: fixed;
-    line-height: normal;
     left: 0;
     top: 0;
     right: 0;
-    padding-left: 5%;
-    padding-right: 4%;
     z-index: 1;
+    margin-left: 0 auto;
 }
 
-
 .nav-links {
-/*    display: flex;
-    justify-content: space-around;
-    width: 45%;
-    align-items: center;*/
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    align-items: center;
 }
 
 .nav-links li {
@@ -80,11 +125,30 @@ nav {
     text-decoration: none;
     letter-spacing: 1.5px;
     font-size: 15px;
+    border-bottom: 2px solid transparent;
 }
 
 .nav-links a:hover {
-    color: #0088a9;
-    padding: 8px;
+     border-color: #fff;
+/*    text-shadow: 2px 2px #000000;*/
+}
+
+/*****MENU*****/
+
+/*#menu {
+    margin-right: 0 auto;
+}*/
+
+.drop {
+    display: none;
+}
+
+.nav-links .kollektion:hover .drop {
+    padding: 25px 5px 2px 5px;
+    line-height: 1.6em;
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .45);
 }
 
 /*****BURGER*****/
@@ -120,10 +184,20 @@ nav {
 
 /*****SPLASH*****/
 
+/*
 #splash {
+        position: relative;
+}
+*/
+
+#splash img {
     width: 100vw;
-display: none;
-    object-fit: contain;
+}
+
+/*****MAIN*****/
+
+main {
+    padding: 60px 0;
 }
 
 /*****FONT COLORS*****/

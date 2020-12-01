@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2. Semester eksamesprojekt</title>
     <!-- Css -->
-    <link rel="stylesheet" href="globalstyle.css">
+    <link rel="stylesheet" href="css/globalstyle.css">
     <!-- Fonts -->
-    <link href="" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@500&display=swap" rel="style">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -17,38 +18,68 @@
 <body>
     <!-- Header + Nav -->
     <header>
-        <nav>
-            <div class="header_left">
-                <div id="logo">
-                    <a href="index.html"><img src="assets/logo/karencopenhagen.jpg" class="logo" alt="logo"></a>
-                </div>
-                <div id="logo_text">
-                    <img src="assets/logo/" class="logotext" alt="Logotext">
-                </div>
+
+        <div class="header_left">
+            <div id="logo">
+                <a href="index.html"><img src="assets/logo/karen_badge_trans_nocircle.png" class="logo" alt="logo"></a>
+                                <a href="index.html"><img src="assets/logo/karencopenhagenLogoTransparent1100x1100.png" class="logo2 none" alt="logo Transparent"></a>
             </div>
-            <div class="header_right">
-                <div id="language">
-                    <img src="assets/" class="lang_dk" alt="flag_dk">
-                    <img src="assets/" class="lang_uk none" alt="flag_uk">
+
+<!--            <div id="logo_text" class="none">
+                                    <img src="assets/logo/karencopenhagen.jpg" class="logotext" alt="Logotext">
+            </div>-->
+        </div>
+        <div class="header_right">
+            <nav id="menu">
+                <ul class="nav-links">
+                    <div class="kollektion">
+                        <li>
+                            <a href="#kollektion">Kollektion</a>
+                        </li>
+                        <div class="drop">
+                            <li>
+                                <a href="#nu">Nuværende</a>
+                            </li>
+                            <li>
+                                <a href="#tidligere">Tidligere</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="kontakt">
+                        <li>
+                            <a href="#kontakt">Kontakt</a>
+                        </li>
+                    </div>
+                    <div class="kontakt">
+                        <li class="om_karen">
+                            <a href="#om">Om Karen</a>
+                        </li>
+                    </div>
+                    <div id="shoppingcart">
+                        <img src="assets/icons/shoppingcart.png" class="cart" alt="Shoppingcart">
+                    </div>
+                    <div id="language">
+                        <img src="assets/flag/dk.png" class="langDK" alt="flag dk">
+                        <img src="assets/flag/uk.png" class="langUK none" alt="flag uk">
+                    </div>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-                                <div id="shoppingcart">
-                    <img src="assets/" class="cart" alt="Shoppingcart">
-                </div>
-                <div id="menu" class="none">
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                </div>
-                <div id="cv"></div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
+    <!-- splash -->
+    <div id="splash">
+        <img src="assets/splash/outside_light_gradient.png">
+    </div>
     <!-- main -->
     <section id="main">
-        <div class="col_left"></div>
+        <div class="col_left none"></div>
         <div class="col_center"></div>
-        <div class="col_right"></div>
+        <div class="col_right none"></div>
     </section>
     <!-- SOME -->
     <section id="some">
@@ -59,10 +90,10 @@
         </div>
         <div class="some_center">
             <div class="fb">
-                    <img src="assets/some/facebook.png" alt="Facebook SoMe img">
+                <img src="assets/some/facebook.png" alt="Facebook SoMe img">
             </div>
             <div class="insta">
-                    <img src="assets/some/instagram.png" alt="Instagram SoMe img">
+                <img src="assets/some/instagram.png" alt="Instagram SoMe img">
             </div>
         </div>
         <div class="some_right">
@@ -78,8 +109,5 @@
     </footer>
 
     <!-- Script -->
-    <script src="script.js"></script>
-</body>
-
-
-</html>
+    <script src="globalscript.js"></script>
+</body></html>
