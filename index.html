@@ -7,6 +7,7 @@
     <title>2. Semester eksamesprojekt</title>
     <!-- Css -->
     <link rel="stylesheet" href="css/globalstyle.css">
+    <link rel="stylesheet" href="css/looppop.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@500&display=swap" rel="style">
 
@@ -16,73 +17,98 @@
 </head>
 
 <body>
-    <!-- Header + Nav -->
-    <header>
+    <!-- splash -->
+    <section id="splash" class="">
+        <img src="assets/splash/karen-lolk-05zfcymXeD6yFq2MnebUcw.jfif" class="splashback">
+        <img id="splashsrc" src="assets/splash/karen-lolk-05zfcymXeD6yFq2MnebUcw.jfif" class="splashimg">
 
-        <div class="header_left">
+        <!-- Header + Nav -->
+        <header>
             <div id="logo">
-                <a href="index.html"><img src="assets/logo/karen_badge_trans_nocircle.png" class="logo" alt="logo"></a>
-                                <a href="index.html"><img src="assets/logo/karencopenhagenLogoTransparent1100x1100.png" class="logo2 none" alt="logo Transparent"></a>
+                <a href="index.html"><img src="assets/logo/karen_badge_trans_nocircle.png" class="logo1 none" alt="logo"></a>
+                <a href="index.html"><img src="assets/logo/karencopenhagenLogoTransparent1100x1100.png" class="logo2" alt="logo Transparent"></a>
             </div>
-
-<!--            <div id="logo_text" class="none">
-                                    <img src="assets/logo/karencopenhagen.jpg" class="logotext" alt="Logotext">
-            </div>-->
-        </div>
-        <div class="header_right">
-            <nav id="menu">
+            <nav>
                 <ul class="nav-links">
                     <div class="kollektion">
                         <li>
-                            <a href="#kollektion">Kollektion</a>
+                            <a href="#kollektion">Kollektioner</a>
                         </li>
-                        <div class="drop">
-                            <li>
-                                <a href="#nu">Nuværende</a>
-                            </li>
-                            <li>
-                                <a href="#tidligere">Tidligere</a>
-                            </li>
-                        </div>
                     </div>
                     <div class="kontakt">
                         <li>
                             <a href="#kontakt">Kontakt</a>
                         </li>
                     </div>
-                    <div class="kontakt">
+                    <div class="om_karen">
                         <li class="om_karen">
                             <a href="#om">Om Karen</a>
                         </li>
                     </div>
+                </ul>
+                <div class="phonename">
+                    <p>Copenhagen Design</p>
+                </div>
+                <div id="icons">
                     <div id="shoppingcart">
-                        <img src="assets/icons/shoppingcart.png" class="cart" alt="Shoppingcart">
+                        <img src="assets/icons/shopping-cart.svg" class="cart" alt="Shoppingcart">
                     </div>
                     <div id="language">
                         <img src="assets/flag/dk.png" class="langDK" alt="flag dk">
                         <img src="assets/flag/uk.png" class="langUK none" alt="flag uk">
                     </div>
-                </ul>
+                </div>
                 <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                 </div>
             </nav>
-        </div>
-    </header>
-    <!-- splash -->
-    <div id="splash">
-        <img src="assets/splash/outside_light_gradient.png">
-    </div>
+        </header>
+    </section>
+
+    <!-- popup -->
+    <section id="popup">
+        <article>
+            <div id="luk">
+                <button> x </button>
+            </div>
+            <img src="" alt="tøj">
+            <div>
+                <h2></h2>
+                <p><b>Pris:</b> <span class="pris"></span></p>
+                <p><b>Beskrivelse:</b> <span class="beskrivelse"></span></p>
+            </div>
+        </article>
+    </section>
+
+    <!-- TEMPLATE -->
+    <template>
+        <article id="full-list-view">
+            <h2></h2>
+            <p><b>Pris:</b> <span class="pris"></span></p>
+            <img src="" alt="Tøj">
+        </article>
+    </template>
+
     <!-- main -->
     <section id="main">
-        <div class="col_left none"></div>
-        <div class="col_center"></div>
-        <div class="col_right none"></div>
+
+        <div class="col_left">
+            <button class="filter valgt" data-kategori="alle">Alle kollektioner</button>
+            <button class="filter" data-kategori="foraar">Forår</button>
+            <button class="filter" data-kategori="sommer">Sommer</button>
+            <button class="filter" data-kategori="efteraar">Efterår</button>
+            <button class="filter" data-kategori="vinter">Vinter</button>
+            <button class="filter" data-kategori="andet">Andet</button>
+        </div>
+        <div class="col_center">
+            <h1 id="kol_h1"></h1>
+            <div class="list"></div>
+        </div>
     </section>
     <!-- SOME -->
-    <section id="some">
+    <section id="some" class="none">
         <div class="some_left">
             <div class="txt">
                 <p></p>
@@ -109,5 +135,6 @@
     </footer>
 
     <!-- Script -->
-    <script src="globalscript.js"></script>
+    <script src="script/globalscript.js"></script>
+    <script src="script/looppop.js"></script>
 </body></html>
