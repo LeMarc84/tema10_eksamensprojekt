@@ -154,6 +154,7 @@ header {
     width: 80vw;
     margin: 0 auto;
     padding-top: 91vh;
+    display: flex;
 }
 
 #main .col_left {
