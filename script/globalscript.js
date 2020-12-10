@@ -63,6 +63,15 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
+const kolnav = document.querySelector('.nav-links-kollektion');
+const mainnav = document.querySelector('.nav-links-main');
+
+const kollink = document.querySelector('.kollektion');
+const mainKollDiv = document.querySelector('.col_kollektioner');
+const mainOmDiv = document.querySelector('.col_om_karen');
+
+const omKarenLink = document.querySelector('.om_karen');
+
 burger.addEventListener('click', () => {
     //Toggle Nav
     nav.classList.toggle('nav-active');
@@ -72,6 +81,15 @@ burger.addEventListener('click', () => {
         if (link.style.animation) {
             //(hvis der allerede er en animation så fjernes den)
             link.style.animation = ''
+
+            //REVERT BURGER TIL ORIGINAL
+            kolnav.classList.add('none');
+            mainnav.classList.remove('none');
+
+            omKarenLink.addEventListener('click', () => {
+                mainKollDiv.classList.add('none');
+                mainOmDiv.classList.remove('none');
+            })
         } else {
             //(hvis der ikke er en animation, så tilføjes den
             link.style.animation = `navLinkFade 0.5s ease forwards ${(index / 15)+.3}s`;
@@ -84,14 +102,12 @@ burger.addEventListener('click', () => {
 //NAVIGATION SLUTTER HER
 
 //KOLLEKTIONS-NAVIGATION STARTER HER
-const kolnav = document.querySelector('.nav-links-kollektion');
-const mainnav = document.querySelector('.nav-links-main');
-const kollink = document.querySelector('.kollektion');
 
 kollink.addEventListener('click', () => {
     //Toggle Nav
     kolnav.classList.toggle('none');
     mainnav.classList.toggle('none');
-
+    mainKollDiv.classList.toggle('none');
+    mainOmDiv.classList.add('none');
 });
 //KOLLEKTIONS-NAVIGATION SLUTTER HER
