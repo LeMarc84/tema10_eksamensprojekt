@@ -8,7 +8,7 @@
   let temp = document.querySelector("template");
 
   let filter = "alle";
-  const link = "https://www.selya.dk/kea/10_eksamensprojekt/wordpress/wp-json/wp/v2/produkter";
+  const link = "https://www.selya.dk/kea/10_eksamensprojekt/wordpress/wp-json/wp/v2/produkter?per_page=100";
 
   async function loadJSON() {
       const respons = await fetch(link);
@@ -26,7 +26,7 @@
 
       //løb igennem array "element"
       json.forEach(element => {
-          if (filter == "alle" || filter == element.kategori[0]) {
+          if (filter == "alle" || filter == element.categories[0]) {
               console.log(filter);
 
               const klon = temp.cloneNode(true).content;
@@ -61,12 +61,21 @@
 
   function filterBTNs() {
       filter = this.dataset.element;
-      document.querySelector("kol_h1").textContent = this.innerHTML;
-      document.querySelectorAll(".filter").forEach((btn) => {
-          btn.classList.remove("valgt");
+      document.querySelector("#kol_h1").textContent = this.textContent;
+      document.querySelectorAll(".filter").forEach((navLink) => {
+          navLink.classList.remove("valgt");
+
       })
       this.classList.add("valgt");
-      vis();
+
+      //   document.querySelectorAll(".arrow").forEach((arrow) => {
+      //       arrow.classList.add("none");
+
+      //   })
+      //   this.classList.toggle("block");
+
+      vis(json);
+
   }
 
   loadJSON();

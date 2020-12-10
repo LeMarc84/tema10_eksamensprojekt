@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="dk">
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
     <!-- splash -->
     <section id="splash" class="">
         <img src="assets/splash/karen-lolk-05zfcymXeD6yFq2MnebUcw.jfif" class="splashback">
-        <img id="splashsrc" src="assets/splash/karen-lolk-05zfcymXeD6yFq2MnebUcw.jfif" class="splashimg">
+        <img id="splashsrc" src="assets/splash/karen-lolk-05zfcymXeD6yFq2MnebUcw.jfif" class="splashimg fadeIn10">
 
         <!-- Header + Nav -->
         <header>
@@ -30,20 +30,69 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <div class="kollektion">
-                        <li>
-                            <a href="#kollektion">Kollektioner</a>
-                        </li>
+                    <div class="nav-links-main">
+                        <div class="kollektion">
+                            <li>
+                                <a href="#kollektion">Kollektioner</a>
+                            </li>
+                        </div>
+                        <div class="kontakt">
+                            <li>
+                                <a href="kontakt.php">Kontakt</a>
+                            </li>
+                        </div>
+                        <div class="om_karen">
+                            <li class="om_karen">
+                                <a href="#om">Om Karen</a>
+                            </li>
+                        </div>
                     </div>
-                    <div class="kontakt">
-                        <li>
-                            <a href="#kontakt">Kontakt</a>
-                        </li>
-                    </div>
-                    <div class="om_karen">
-                        <li class="om_karen">
-                            <a href="#om">Om Karen</a>
-                        </li>
+                    <div class="nav-links-kollektion none">
+                        <div class="alle">
+                            <li>
+                                <a href="#kollektion" class="filter valgt" data-element="alle"><i class="arrow left none"></i> Alle</a>
+                            </li>
+                        </div>
+                        <div class="kjoler">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="2"><i class="arrow left none"></i>Kjoler</a>
+                            </li>
+                        </div>
+                        <div class="nederdele">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="3"><i class="arrow left none"></i>Nederdele</a>
+                            </li>
+                        </div>
+                        <div class="bukser">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="4"><i class="arrow left none"></i>Bukser</a>
+                            </li>
+                        </div>
+                        <div class="overtoej">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="5"><i class="arrow left none"></i>Overtøj</a>
+                            </li>
+                        </div>
+                        <div class="kimonos">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="6"><i class="arrow left none"></i>Kimonos</a>
+                            </li>
+                        </div>
+                        <div class="t-shirts">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="7"><i class="arrow left none"></i>T-shirts</a>
+                            </li>
+                        </div>
+                        <div class="accessories">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="8"><i class="arrow left none"></i>Accessories</a>
+                            </li>
+                        </div>
+                        <div class="unisex">
+                            <li>
+                                <a href="#kollektion" class="filter" data-element="9"><i class="arrow left none"></i>Unisex</a>
+                            </li>
+                        </div>
                     </div>
                 </ul>
                 <div class="phonename">
@@ -51,7 +100,7 @@
                 </div>
                 <div id="icons">
                     <div id="shoppingcart">
-                        <img src="assets/icons/shopping-cart.svg" class="cart" alt="Shoppingcart">
+                        <img src="assets/icons/shopping-cart-white.png" class="cart" alt="Shoppingcart">
                     </div>
                     <div id="language">
                         <img src="assets/flag/dk.png" class="langDK" alt="flag dk">
@@ -93,20 +142,68 @@
 
     <!-- main -->
     <section id="main">
-
-        <div class="col_left">
-            <button class="filter valgt" data-kategori="alle">Alle kollektioner</button>
-            <button class="filter" data-kategori="foraar">Forår</button>
-            <button class="filter" data-kategori="sommer">Sommer</button>
-            <button class="filter" data-kategori="efteraar">Efterår</button>
-            <button class="filter" data-kategori="vinter">Vinter</button>
-            <button class="filter" data-kategori="andet">Andet</button>
-        </div>
-        <div class="col_center">
+        <div class="col_kollektioner none">
             <h1 id="kol_h1"></h1>
-            <div class="list"></div>
+            <div id="kollektion" class="list"></div>
+        </div>
+        <div class="col_om_karen">
+            <div id="om" class="om-list">
+                <div class="wrapper_0">
+                    <div class="box header">
+                        <h1 id="about">Om Karen Copenhagen Design</h1>
+                    </div>
+                    <div class="box sidebar"><img src="assets/pics/kontakt.PNG" alt="Om Karen"></div>
+                    <div class="box content">
+                        <p>Igennem de sidste 30 år har jeg arbejdet med tøj og kreative projekter, mine færdigheder inden for syning, materialelære og design er autodidakt selvlært. Disse mange års store interesse for tekstildesign har gjort at jeg for nyligt
+                            er startet på uddannelsen til Tekstilformidler hvor jeg bliver færdig i 2021.</p><br><br>
+                        <p>De mange års arbejde er også her at jeg har jeg tilegnet mig selv de egenskaber og ressourcer der gør det muligt at restaurere, designe og upcycle vintage tøj, og på denne måde puste nyt liv i ellers dødt tøj.</p>
+                    </div>
+                    <div class="box bottom">
+                        <p>Når jeg designer går jeg efter at bryde vores vante rammer, og realisere unikke og originale ideer der ikke er blevet set før. Jeg designer med utraditionelle materialer og kan godt lide at give materialerne en ny funktion ved
+                            f.eks. at sy mønsteret fra et badeforhæng ind i en kjole. Igennem disse mange år</p>
+                    </div>
+                </div>
+                <div class="wrapper_1">
+                    <div class="box header">
+                        <h1 id="filosofi">Designfilosofi</h1>
+                    </div>
+                    <div class="box content">
+                        <p>Farver er humør og kan derfor være med til at smitter humøret på den der bære tøjet eller ser personen der bære det. Farver er et udtryk for personen der bærer dem. Farverne har betydning. Ikke kun for dig, som bærer dem, men for
+                            omgivelserne der ser dem. Eksempelvis er en turkis kjole livlig og animerede. Ligesom pænt og fint tøj højner niveauet til en fest, sexet tøj højner niveauet til natten, og ligesom en grå, hullet jogging habit suger energi
+                            fra omgivelserne, så er tøjet og farverne udtryk for en ambition og ånd. Af disse årsager er farverne altid i fokus i mit design.
+                        </p>
+                    </div>
+                    <div class="box sidebar"><img src="assets/pics/kontakt.PNG" alt="Om Karen"></div>
+                </div>
+                <div class="wrapper_2">
+                    <div class="box header">
+                        <h1 id="vision">Vision</h1>
+                    </div>
+                    <div class="box content">
+                        <p>Kundekontakt er noget af det vigtigste for mig, den er direkte og personlig, den giver forståelse og indsigter som en mail eller en sms ikke kan. Derfor er jeg glad for den kontakt jeg har med kunderne på Nørrebro.</p>
+                    </div>
+                    <div class="box bottom">
+                        <p>Det ville derfor være i den rette ånd i fremtiden at danne et koncept om en række pop-up butikker rundt omkring i Danmark, hvor kunder både får mulighed for at købe fra min kollektion, men også mulighed for at komme til mig med
+                            deres gamle tøj og få det redesignet. Derudover ser jeg allerede nu interesse i mine produkter fra mange mænd. Det er derfor i mine planer at inddrage mændene mere og tilbyde særskilte produkter til dem. Tillige vil jeg i den
+                            nærmeste fremtid komme med tøj der er lavet med broderi og stoftryk - alt sammen made by hand, selvfølgelig.
+                        </p>
+                    </div>
+                    <div class="box sidebar"><img src="assets/pics/kontakt.PNG" alt="Om Karen"></div>
+                </div>
+                <div class="wrapper_3">
+                    <div class="box header">
+                        <h1 id="genbrug">Genbrug & upcycling</h1>
+                    </div>
+                    <div class="box content">
+                        <p>Det materialet som tøjet fra 80’erne og 90’erne blev lavet af er generelt af lange bedre kvalitet end det som der bliver brugt i dag. Derfor er det i min optik en skam at meget af det gamle tøj ikke bliver brugt, fordi designet
+                            måske ikke repræsenterer nutidens trends og tendenser. Derfor har jeg specialiseret mig i at finde det bedste tøj der bliver markeret som “genbrug” og upcycle det og derved tilføje tøjet en ny værdi - produktet bliver nærmest
+                            genfødt. Ca. 70% af de genbrugsmaterialer jeg indkøber kommer fra Røde Kors, Kirkens Korshær og Danmission.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <!-- SOME -->
     <section id="some" class="none">
         <div class="some_left">
@@ -137,4 +234,6 @@
     <!-- Script -->
     <script src="script/globalscript.js"></script>
     <script src="script/looppop.js"></script>
-</body></html>
+</body>
+
+</html>

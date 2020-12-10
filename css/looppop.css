@@ -1,105 +1,112 @@
 #full-list-view {
-            border: 3px solid #333;
-            background-color: darkorange;
-            padding: 10px;
-            line-height: normal;
-            border-radius: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    border: 3px solid #333;
+    background-color: none;
+    padding: 10px;
+    line-height: normal;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
- #full-list-view img {
-     max-width: 95%;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: 10px;
- }
+#full-list-view:hover {
+    background-color: rgba(78, 165, 192, 0.151);
+}
 
- .list {
-     padding: 0px;
-     width: 90vw;
-     max-width: 1100px;
-     margin: 0 auto;
-     display: grid;
-     grid-gap: 5px;
-     align-items: top;
-     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- }
+#full-list-view img {
+    max-width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+    padding: 10px 0 5px 0;
+}
 
- button {
-     background-color: orangered;
-     border-radius: 5px;
-     padding: 5px;
-     font-size: 1.0em;
- }
+.list {
+    padding: 0px;
+    width: 90vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    align-items: top;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
- button:hover {
-     background-color: lightcoral;
- }
 
- .valgt {
-     background-color: lightcoral;
- }
+/* button {
+    background-color: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.0em;
+}
 
- #popup {
-     position: fixed;
-     top: 0;
-     left: 0;
-     display: flex;
-     justify-content: center;
-     width: 100vw;
-     height: 100vh;
-     padding-top: 5%;
-     background-color: rgba(0, 0, 0, .8);
-     display: none;
- }
+button:hover {
+    background-color: rgba(78, 165, 192, 0.151);
+} */
 
-        #popup article {
-            display: flex;
-            max-width: 80vw;
-            max-height: 80vh;
-            margin: 0 auto;
-            border-radius: 25px;
-            padding: 15px;
-            background-color: aliceblue;
-        }
+.nav-links .valgt {
+    /* transition: all 0.3s ease 0s; */
+    border-color: #fff;
+}
 
-        #popup img {
-            display: flex;
-            width: 60%;
-            margin-left: 0em;
-            border-radius: 15px;
-            padding-right: 15px;
-        }
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
 
-        #luk button {
-            position: fixed;
-            top: 10.4vh;
-            right: 9.2vw;
-            background-color: white;
-            color: black;
-            text-align: center;
-            text-decoration: none;
-            border: 2;
-            display: inline-block;
-            font-size: 20px;
-            padding: 5px 10px;
-            border-radius: 30%;
-            cursor: pointer;
-        }
+#popup article {
+    display: flex;
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: aliceblue;
+}
 
-        span {
-            font-weight: normal;
-        }
+#popup img {
+    display: flex;
+    width: 60%;
+    margin-left: 0em;
+    border-radius: 15px;
+    padding-right: 15px;
+}
 
-        #popup p {
-            display: flex;
-            width: 35vw;
-            font-family:sans-serif;
-            font-weight: bold;
-        }
+#luk button {
+    position: fixed;
+    top: 10.4vh;
+    right: 9.2vw;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: 2;
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+span {
+    font-weight: normal;
+}
+
+#popup p {
+    display: flex;
+    width: 35vw;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 
 p b {
     padding-right: 10px;
