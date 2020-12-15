@@ -9,36 +9,6 @@ window.addEventListener('DOMContentLoaded', (slideLogo) => {
 
 });
 
-//SPLASH IMAGE CHANGE
-
-var images = [],
-    x = 0;
-images[0] = "assets/splash/outside_light_gradient.png";
-images[1] = "assets/splash/outside_light.png";
-images[2] = "assets/splash/outside_dark_side.jpg";
-images[3] = "assets/splash/karen-lolk-05zfcymXeD6yFq2MnebUcw.jfif";
-setInterval("changeImage()", 10000);
-var x = 0;
-
-changeImage();
-
-function changeImage() {
-    var img = document.getElementById("splashsrc");
-    img.src = images[x];
-    x++;
-    if (x >= images.length) {
-        x = 0;
-    }
-    fadeImg(img);
-    setTimeout("changeImage()", 10000);
-}
-
-function fadeImg(img) {
-    console.log("fadeMe");
-
-    img.classList.add(".fadeIn10");
-}
-
 const lang = document.querySelector("#language");
 
 lang.addEventListener("click", () => {
