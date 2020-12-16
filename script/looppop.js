@@ -14,12 +14,13 @@
       const respons = await fetch(link);
       json = await respons.json();
       addEventListenerToButtons();
-      vis();
+      vis(json);
   }
+  const templatePointer = document.querySelector('template');
 
   function vis() {
 
-      const templatePointer = document.querySelector("template");
+
       let listPointer = document.querySelector(".list");
 
       listPointer.innerHTML = " ";
@@ -51,6 +52,7 @@
       popup.querySelector(".pris").textContent = element.pris + " kr.";
       popup.querySelector("img").src = element.image.guid;
       popup.querySelector(".beskrivelse").innerHTML = element.beskrivelse;
+
   }
 
   function addEventListenerToButtons() {
@@ -68,11 +70,11 @@
       })
       this.classList.add("valgt");
 
-      //   document.querySelectorAll(".arrow").forEach((arrow) => {
-      //       arrow.classList.add("none");
+      //   document.querySelectorAll(".left").forEach((left) => {
+      //       left.classList.add("none");
 
       //   })
-      //   this.classList.toggle("block");
+      //   this.classList.remove("none");
 
       vis(json);
 

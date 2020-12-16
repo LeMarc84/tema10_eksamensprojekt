@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', (slideLogo) => {
     phonename.style.animation = `phonenameMove 0.5s ease forwards ${.6}s`;
     console.log('phonenameMove');
 
+    visKollektion();
 });
 
 const lang = document.querySelector("#language");
@@ -42,6 +43,10 @@ const mainOmDiv = document.querySelector('.col_om_karen');
 
 const omKarenLink = document.querySelector('.om_karen');
 
+//PopUp toggles Burger
+// const burgerPop = document.querySelector('article');
+// })
+
 burger.addEventListener('click', () => {
     //Toggle Nav
     nav.classList.toggle('nav-active');
@@ -59,7 +64,10 @@ burger.addEventListener('click', () => {
             omKarenLink.addEventListener('click', () => {
                 mainKollDiv.classList.add('none');
                 mainOmDiv.classList.remove('none');
+
+                visKollektion();
             })
+
         } else {
             //(hvis der ikke er en animation, så tilføjes den
             link.style.animation = `navLinkFade 0.5s ease forwards ${(index / 15)+.3}s`;
@@ -73,11 +81,15 @@ burger.addEventListener('click', () => {
 
 //KOLLEKTIONS-NAVIGATION STARTER HER
 
-kollink.addEventListener('click', () => {
-    //Toggle Nav
-    kolnav.classList.toggle('none');
-    mainnav.classList.toggle('none');
-    mainKollDiv.classList.toggle('none');
-    mainOmDiv.classList.add('none');
-});
+function visKollektion() {
+    kollink.addEventListener('click', () => {
+        //Toggle mellem main Nav og kollektions nav
+        kolnav.classList.toggle('none');
+        mainnav.classList.toggle('none');
+
+        //Toggle Om Karen / og Kollektion = block/none
+        mainKollDiv.classList.remove('none');
+        mainOmDiv.classList.add('none');
+    });
+}
 //KOLLEKTIONS-NAVIGATION SLUTTER HER
