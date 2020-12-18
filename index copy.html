@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="da_DK">
+<html lang="dk">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEA 2. Semester eksamesprojekt</title>
+    <title>2. Semester eksamesprojekt</title>
     <!-- Css -->
     <link rel="stylesheet" href="css/globalstyle.css">
     <link rel="stylesheet" href="css/looppop.css">
@@ -18,6 +18,33 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 </head>
+<script type="text/javascript">
+    var scrolling = null;
+
+    function scroll_up() {
+        var d = document.getElementById('scroller');
+
+        d.scrollTop = d.scrollTop - 5;
+
+        scrolling = window.setTimeout(function() {
+            scroll_up();
+        }, 100);
+    }
+
+    function scroll_down() {
+        var d = document.getElementById('scroller');
+
+        d.scrollTop = d.scrollTop + 5;
+
+        scrolling = window.setTimeout(function() {
+            scroll_down();
+        }, 100);
+    }
+
+    function stop_scroll() {
+        window.clearTimeout(scrolling);
+    }
+</script>
 
 <body>
     <!-- Load Facebook SDK for JavaScript -->
@@ -39,7 +66,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <div id="scroller" style="width:100px; height:70px; overflow:hidden;"></div>
     <!-- Chat Plugin code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="210662805806914" theme_color="#7646ff" greeting_dialog_delay="10" greeting_dialog_display="fade" logged_in_greeting="Hej, ka' jeg hjælpe dig? :)  Mvh Karen" logged_out_greeting="Hej, ka' jeg hjælpe dig? :)  Mvh Karen">
     </div>
@@ -56,7 +83,7 @@
     <header>
         <nav>
             <div id="arrow_down" class="arrow_down down">
-                <a href="#main"><b class="arrow"></b></a>
+                <div style="color:whitesmoke;" onmouseover="scroll_down();" onmouseout="stop_scroll();"> <a href="#"><b class="arrow">scroll down</b></a> </div>
             </div>
             <ul class="nav-links">
                 <div class="nav-links-main">
@@ -209,10 +236,7 @@
                     <div class="box header">
                         <h1 id="about">Om Karen Copenhagen</h1>
                     </div>
-                    <div class="box content">
-                        <div class="videodiv"> <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1" frameborder="0" allowfullscreen class="video">
-                        </iframe></div>
-                    </div>
+                    <div class="box content"><img src="assets/splash/DSC02400.jpg" alt="Om Karen"></div>
                     <div class="box_txt sidebar">
                         <p>Igennem de sidste 30 år har jeg arbejdet med tøj og kreative projekter, mine færdigheder inden for syning, materialelære og design er autodidakt selvlært. Disse mange års store interesse for tekstildesign har gjort at jeg for nyligt
                             er startet på uddannelsen til Tekstilformidler hvor jeg bliver færdig i 2021.</p><br><br>
@@ -313,6 +337,7 @@
         </div>
         <p>KEA MMD E2020 Grp.02 ©</p>
     </footer>
+    </div>
     <!-- Script -->
     <script src="script/globalscript.js"></script>
     <script src="script/looppop.js"></script>

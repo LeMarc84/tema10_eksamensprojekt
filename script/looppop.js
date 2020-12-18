@@ -20,7 +20,6 @@
 
   function vis() {
 
-
       let listPointer = document.querySelector(".list");
 
       listPointer.innerHTML = " ";
@@ -69,12 +68,6 @@
 
       })
       this.classList.add("valgt");
-
-      //   document.querySelectorAll(".left").forEach((left) => {
-      //       left.classList.add("none");
-
-      //   })
-      //   this.classList.remove("none");
 
       vis(json);
 

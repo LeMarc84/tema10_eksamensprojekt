@@ -14,11 +14,6 @@
         background-color: #6d2b7c;
     }
 
-    html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 60px;
-    }
-
     img {
         max-width: 100%;
     }
@@ -115,6 +110,41 @@
         text-decoration: none;
         cursor: pointer;
         font-size: 1.1rem;
+    }
+    /******SCROLL EXPERIENCE******/
+
+    html,
+    body {
+        scroll-snap-type: mandatory;
+        scroll-snap-points-y: repeat(300px);
+        scroll-snap-type: y mandatory;
+        scroll-padding: 10%;
+    }
+
+    .splash_container,
+    article,
+    .wrapper_0,
+    .wrapper_1,
+    .wrapper_2,
+    .wrapper_3,
+    .some_wrapper {
+        scroll-snap-align: start;
+    }
+    /**********VIDEO********/
+
+    .videodiv {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+
+    .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
     /*****HEADER*****/
 
@@ -368,6 +398,12 @@
     }
     /* ********ARROWS******* */
 
+    .arrow_down {
+        position: absolute;
+        top: 85vh;
+        right: 50vw;
+    }
+
     .arrow {
         position: absolute;
         border: solid whitesmoke;
@@ -378,12 +414,6 @@
         z-index: 5;
         animation: 'MoveUpDown' 3s linear infinite;
         border-style: dotted;
-    }
-
-    .arrow_down {
-        position: absolute;
-        top: 85vh;
-        right: 50vw;
     }
 
     @keyframes MoveUpDown {
@@ -726,69 +756,38 @@
         .some_wrapper b {
             display: block;
         }
-        /* .wrapper_0 {
-            display: grid;
-            grid-template-rows: none;
-                    grid-template-columns: 1fr 1fr 1fr;
-
-            grid-template-areas: "header header header" "sidebar content content" "bottom bottom bottom";
-        }
-        #om h1 {
-            text-align: center;
-            color: whitesmoke;
-        }
-        .wrapper_1 {
-            display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-
-            grid-template-areas: "header header ......." "content content sidebar";
-        }
-        .wrapper_2 {
-            display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-
-            grid-template-areas: "....... header header" "content content content" "bottom bottom sidebar";
-        }
-        .wrapper_2 h1 {
-            text-align: right;
-            font-size: 1.5rem;
-        }
-        .wrapper_3 {
-            display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-
-            grid-template-areas: "header header ......." "content content content";
-        } */
-        /* .wrapper_0,
-        .wrapper_1,
-        .wrapper_2,
-        .wrapper_3,
-        .wrapper_4 {
-                    grid-template-columns: 1fr 1fr 1fr;
-
-        }
-        .some_wrapper {
-                    grid-template-columns: 1fr 1fr 1fr;
-
-        } */
     }
     /*******ANIMATION*******/
 
-    .fadeIn10 {
-        animation-name: fadeIn10_kf;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
+    .arrow_down {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
     }
 
-    @keyframes fadeIn10_kf {
+    .fadeOut {
+        -webkit-animation-name: fadeOut_kf;
+        animation-name: fadeOut_kf;
+        /* animation-duration: 3s; */
+        /* animation-iteration-count: 1;
+        background-repeat: no-repeat; */
+    }
+
+    @-webkit-keyframes fadeOut_kf {
         0% {
-            opacity: 0;
-        }
-        100% {
             opacity: 1;
         }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes fadeOut_kf {
         0% {
+            opacity: 1;
+        }
+        100% {
             opacity: 0;
         }
     }

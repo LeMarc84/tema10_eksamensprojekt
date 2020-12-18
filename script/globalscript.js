@@ -1,7 +1,11 @@
-// COMPANYNAME ON LOAD
+window.addEventListener('scroll', () => {
+    const arrow = document.querySelector(".arrow_down");
+    arrow.classList.add('fadeOut');
+})
+
 const phonename = document.querySelector(".phonename");
 
-window.addEventListener('DOMContentLoaded', (slideLogo) => {
+window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded');
 
     phonename.style.animation = `phonenameMove 0.5s ease forwards ${.6}s`;
@@ -42,10 +46,6 @@ const mainKollDiv = document.querySelector('.col_kollektioner');
 const mainOmDiv = document.querySelector('.col_om_karen');
 
 const omKarenLink = document.querySelector('.om_karen');
-
-//PopUp toggles Burger
-// const burgerPop = document.querySelector('article');
-// })
 
 burger.addEventListener('click', () => {
     //Toggle Nav
