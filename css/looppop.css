@@ -1,145 +1,176 @@
-#full-list-view {
-    border: 3px solid #333;
-    background-color: none;
-    padding: 10px;
-    line-height: normal;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#full-list-view:hover {
-    background-color: rgba(78, 165, 192, 0.151);
-}
-
-#full-list-view img {
-    max-width: 95%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1px;
-    padding: 10px 0 5px 0;
-}
-
-.list {
-    padding: 0px;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 5px;
-    align-items: top;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-#popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 20vw;
-    background-color: rgba(0, 0, 0, .8);
-    display: none;
-}
-
-#popup article {
-    display: flex;
-    flex-direction: column;
-    max-width: 90vw;
-    max-height: 80vh;
-    margin: 0 auto;
-    border-radius: 25px;
-    padding: 15px;
-    background-color: aliceblue;
-    overflow: scroll;
-}
-
-#popup img {
-    display: flex;
-    width: 100%;
-    margin-left: 0em;
-    border-radius: 15px;
-    padding: 5px;
-}
-
-#luk button {
-    position: fixed;
-    top: 11vh;
-    right: 6vw;
-    background-color: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    border: 2;
-    display: inline-block;
-    font-size: 20px;
-    padding: 0 5px 5px 5px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-/* span {
-    font-weight: normal;
-    width: 90vw;
-    max-width: 90vw;
-} */
-
-#popup .beskrivelse {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 80vw;
-    font-weight: normal;
-    padding: 10px;
-}
-
-article .head {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-article .head .pris {
-    font-weight: 500;
-    font-size: 1.3rem;
-    margin-bottom: 0;
-}
-
-article .head h2 {
-    margin: 0;
-    padding-bottom: 0px;
-}
-
-@media (min-width:700px) {
-    #popup {
-        padding-top: 15vh;
-        margin: 0;
+    #full-list-view {
+        border: 3px solid #333;
+        background-color: rgba(247, 148, 34, 0.45);
+        color: whitesmoke;
+        padding: 10px;
+        line-height: normal;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
+    #full-list-view:hover {
+        background-color: rgba(78, 165, 192, 0.151);
+    }
+
+    #full-list-view img {
+        max-width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1px;
+        padding: 10px 0 5px 0;
+    }
+
+    .list {
+        padding: 0px;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 5px;
+        align-items: top;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 17vw;
+        background-color: rgba(0, 0, 0, .8);
+        display: none;
+    }
+
     #popup article {
         display: flex;
         flex-direction: column;
-        max-width: 60vw;
-        overflow: hidden;
+        max-width: 95vw;
+        max-height: 80vh;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 15px;
+        color: whitesmoke;
+        overflow: scroll;
+        border: solid 2px rgb(245, 245, 245);
     }
-    #luk button {
-        top: 15.2vh;
-        right: 20vw;
-    }
+
     #popup img {
+        display: flex;
         width: 100%;
+        margin-left: 0em;
+        border-radius: 15px;
+        padding: 5px;
     }
+
+    #luk button {
+        position: fixed;
+        top: 8.5vh;
+        right: 3vw;
+        background-color: transparent;
+        color: whitesmoke;
+        text-align: center;
+        text-decoration: none;
+        border: 2px solid whitesmoke;
+        display: inline-block;
+        font-size: 25px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /*********POPUP*********/
+
+    #popup .beskrivelse {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 80vw;
+        font-weight: normal;
+        padding: 10px;
+    }
+
     article .head {
+        position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
-    #popup .body {
-        display: flex;
-        flex-direction: row;
+
+    article .head .pris {
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin-bottom: 0;
     }
-}
+
+    article .head h2 {
+        margin: 0;
+        padding-bottom: 0px;
+        color: whitesmoke;
+    }
+
+    @media (min-width: 400px) {
+        #popup {
+            padding-top: 10vh;
+            margin: 0;
+        }
+        #popup article {
+            display: flex;
+            flex-direction: column;
+            max-width: 80vw;
+            max-height: 95vh;
+            overflow: hidden;
+        }
+        #luk button {
+            top: 10.4vh;
+            right: 6.8vw;
+        }
+        #popup img {
+            width: 100%;
+            max-width: 50vw;
+        }
+    }
+
+    @media (min-width: 700px) {
+        #popup {
+            padding-top: 15vh;
+            margin: 0;
+        }
+        #popup article {
+            display: flex;
+            flex-direction: column;
+            max-width: 60vw;
+            overflow: hidden;
+        }
+        #luk button {
+            top: 15.5vh;
+            right: 18.7vw;
+        }
+        #popup img {
+            width: 100%;
+            max-width: 30vw;
+        }
+        #popup .beskrivelse {
+            width: 100%;
+            max-width: 40vw;
+        }
+        article .head {
+            display: flex;
+            flex-direction: row;
+        }
+        #popup .body {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    @media (min-width: 1300px) {
+        #luk button {
+            top: 15.5vh;
+            right: 19vw;
+        }
+    }

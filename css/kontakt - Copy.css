@@ -94,6 +94,7 @@ label p {
     position: fixed;
     top: 10vh;
     left: 0;
+    display: block;
     justify-content: center;
     justify-self: center;
     width: 100vw;
@@ -149,15 +150,10 @@ label p {
     background-color: rgb(59, 154, 70, 0.85);
 }
 
-
-}
 @media (min-width:400px) {}
-@media (min-width:700px) {
-    .arrow_down {
-        display: none;
-    }
-    /* Style inputs with type="text", select elements and textareas */
 
+@media (min-width:700px) {
+    /* Style inputs with type="text", select elements and textareas */
     input[type=text],
     select,
     textarea {
@@ -178,7 +174,6 @@ label p {
         resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
     }
     /* Style the submit button with a specific background color etc */
-
     input[type=submit] {
         background-color: #0088a9;
         color: white;
@@ -187,7 +182,6 @@ label p {
         border-radius: 4px;
         cursor: pointer;
     }
-
     input[type=reset] {
         background-color: orangered;
         color: white;
@@ -197,54 +191,46 @@ label p {
         cursor: pointer;
     }
     /* When moving the mouse over the submit button, add a darker green color */
-
     input[type=submit]:hover {
         background-color: #008f77;
     }
-
     input[type=reset]:hover {
         background-color: #008f77;
     }
     /* Add a background color and some padding around the form */
-
     .container {
         border-radius: 5px;
         background-color: rgb(59, 154, 70, 0.45);
         padding: 20px;
     }
-
     .main-form {
         max-width: 50%;
         margin: 0 auto;
         padding: 15px;
     }
-
     .main-top p,
     h1 {
         text-align: center;
         color: whitesmoke;
     }
-
     label p {
         color: whitesmoke;
     }
-
     .main-top {
         display: block;
     }
-
     #popup {
         position: fixed;
         top: 0;
         left: 0;
-        display: block;
+        display: flex;
         justify-content: center;
         width: 100vw;
         height: 100vh;
         padding-top: 5%;
         background-color: rgba(0, 0, 0, .8);
+        display: block;
     }
-
     #popup article {
         display: flex;
         max-width: 80vw;
@@ -254,7 +240,6 @@ label p {
         padding: 15px;
         background-color: rgb(59, 154, 70, 0.45);
     }
-
     #popup img {
         display: flex;
         width: 100%;
@@ -263,12 +248,10 @@ label p {
         border-radius: 15px;
         padding: 15px;
     }
-
     #popup:hover img {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
     }
-
     #luk button {
         position: fixed;
         top: 10.4vh;
@@ -284,68 +267,7 @@ label p {
         cursor: pointer;
         color: white;
     }
-
     #luk button:hover {
         background-color: rgb(59, 154, 70, 0.85);
     }
 }
-
-/* input[type=text],
-    select,
-    textarea {
-        width: 100%;
-        height: auto;
-    }
-    input[type=submit] {
-        padding: 12px 20px;
-    }
-    .container {
-        border-radius: 5px;
-        background-color: rgb(59, 154, 70, 0.45);
-        padding: 20px;
-    }
-    .main-form {
-        display: flex;
-        flex-wrap: nowrap;
-        max-width: 50%;
-        margin: 0 auto;
-    }
-    .main-top {
-        display: inline-block;
-    }
-    .main-top p {
-        text-align: center;
-        color: whitesmoke;
-        font-size: 1.1rem;
-    }
-    .main-top h1 {
-        text-align: center;
-        color: whitesmoke;
-        font-size: 1.5rem;
-    }
-    #popup {
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: block;
-    }
-    #popup article {
-        display: flex;
-        flex-wrap: nowrap;
-        max-width: 80vw;
-        max-height: 80vh;
-    }
-    #popup img {
-        display: flex;
-        width: 100%;
-        max-width: 35vw;
-        margin: 0 auto;
-        border-radius: 15px;
-        padding: 15px;
-        display: block;
-    }
-    #luk button {
-        top: 10.4vh;
-        right: 10.3vw;
-    } */

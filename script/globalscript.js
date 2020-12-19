@@ -1,3 +1,14 @@
+// const submitSend = document.querySelector("submit");
+
+// submitSend.addEventListener('click', () => {
+//     const dimForm = document.querySelector(".formblock");
+//     dimForm.classList.add('fadeOut');
+//     const formTak = document.querySelector(".main-top-tak");
+//     formTak.classList.add('block');
+//     const mainTopHide = document.querySelector(".main-top");
+//     mainTopHide.classList.add('none');
+// })
+
 window.addEventListener('scroll', () => {
     const arrow = document.querySelector(".arrow_down");
     arrow.classList.add('fadeOut');
