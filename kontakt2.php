@@ -8,7 +8,6 @@
     <!-- Css -->
     <link rel="stylesheet" href="css/globalstyle.css">
     <link rel="stylesheet" href="css/kontakt.css">
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
@@ -170,9 +169,8 @@
         <article>
             <div id="luk">
             <a href="index.html">
-                <button><p> x </p></button>
-                </a>
-            </div>
+                <button> x </button>
+                  </div>
         <div class="main-top">
             <h1 style="text-align: center">KONTAKT</h1>
             <p>Udfyld formularen, så vender jeg tilbage hurtigst muligt. :)</p>
@@ -180,7 +178,7 @@
         </div>
 
         <div class="main-form">
-            <div class="container">
+            <div class="container formblock">
                 <form action="http://nobisnet.dk/cgi-bin/FormMail.pl" method="POST" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
 
                     <label for="name"><p>* Navn</p></label>
@@ -211,58 +209,54 @@
         </div>
         </article>
     </section>
-    <!-- Footer -->
-    <footer>
-        <!-- SOME -->
-        <section id="some" class="">
-            <div class="some_wrapper">
-                <div class="some_box some_header">
-                    <h1 id="some_h1">Fang mig på sociale medier</h1>
-                </div>
-                <div class="some_box content_l">
-                    <div class="some_icon">
-                        <a href="tel:004552199088">
-                            <img src="assets/icons/viber@8x.png" alt="Call img"><b>+45 5219 9088</b></a>
-                    </div>
-                </div>
-                <div class="some_box content_lft">
-                    <div class="some_icon">
-                        <a href="https://www.instagram.com/karencopenhagen/" target="blank">
-                            <img src="assets/icons/instagram@8x.png" alt="Insta img"><b>INSTAGRAM</b>
-                        </a>
-                    </div>
-                </div>
-                <div class="some_box content_center">
-                    <div class="some_icon">
-                        <a href="https://www.facebook.com/karencopenhagendesign" target="blank">
-                            <img src="assets/icons/facebook@8x.png" alt="Face img"><b>FACEBOOK</b>
-                        </a>
-                    </div>
-                </div>
-                <div class="some_box content_rgt">
-                    <div class="some_icon">
-                        <a href="mailto:vintage@karen-copenhagen.dk" target="blank">
-                            <img src="assets/icons/at@8x.png" alt="Mail img"><b>E-MAIL</b>
-                        </a>
-                    </div>
-                </div>
-                <div class="some_box content_r">
-                    <div class="some_icon">
-                        <a href="https://www.google.com/maps/place/Rantzausgade+%26+Brohusgade,+2200+K%C3%B8benhavn,+Danmark/@55.6872581,12.5454141,17z/data=!3m1!4b1!4m5!3m4!1s0x465253af207fd6d1:0xb4bfe1859e0145cd!8m2!3d55.6872551!4d12.5476028" target="blank">
-                            <img src="assets/icons/map-marker@8x.png" alt="Map img"><b>GOOGLE MAPS</b></a>
-                    </div>
-                </div>
-                <div class="some_box footer_lft">
-                    <p>CVR: 35772332</p>
-                </div>
-                <div class="some_box footer_center">
 
-                </div>
-                <div class="some_box footer_rgt">
-                    <p>KEA MMD E2020 Grp.02 ©</p>
+    <!-- SOME -->
+    <section id="some" class="">
+        <div class="some_wrapper">
+            <div class="some_box some_header">
+                <h1 id="some_h1">Fang mig på sociale medier</h1>
+            </div>
+            <div class="some_box content_l">
+                <div class="some_icon">
+                    <a href="tel:004552199088">
+                        <img src="assets/icons/viber@8x.png" alt="Call img"><b>+45 5219 9088</b></a>
                 </div>
             </div>
-        </section>
+            <div class="some_box content_lft">
+                <div class="some_icon">
+                    <a href="https://www.instagram.com/karencopenhagen/" target="blank">
+                        <img src="assets/icons/instagram@8x.png" alt="Insta img"><b>INSTAGRAM</b>
+                    </a>
+                </div>
+            </div>
+            <div class="some_box content_center">
+                <div class="some_icon">
+                    <a href="https://www.facebook.com/karencopenhagendesign" target="blank">
+                        <img src="assets/icons/facebook@8x.png" alt="Face img"><b>FACEBOOK</b>
+                    </a>
+                </div>
+            </div>
+            <div class="some_box content_rgt">
+                <div class="some_icon">
+                    <a href="mailto:vintage@karen-copenhagen.dk" target="blank">
+                        <img src="assets/icons/at@8x.png" alt="Mail img"><b>E-MAIL</b>
+                    </a>
+                </div>
+            </div>
+            <div class="some_box content_r">
+                <div class="some_icon">
+                    <a href="https://www.google.com/maps/place/Rantzausgade+%26+Brohusgade,+2200+K%C3%B8benhavn,+Danmark/@55.6872581,12.5454141,17z/data=!3m1!4b1!4m5!3m4!1s0x465253af207fd6d1:0xb4bfe1859e0145cd!8m2!3d55.6872551!4d12.5476028" target="blank" ;>
+                        <img src="assets/icons/map-marker@8x.png" alt="Map img"><b>GOOGLE MAPS</b></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="cvr">
+            <p>CVR: 35772332</p>
+        </div>
+        <p>KEA MMD E2020 Grp.02 ©</p>
     </footer>
     <!-- Script -->
     <script src="script/globalscript.js"></script>

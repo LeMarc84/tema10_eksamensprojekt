@@ -104,3 +104,43 @@ function visKollektion() {
     });
 }
 //KOLLEKTIONS-NAVIGATION SLUTTER HER
+
+//FÅ MENU TIL AT LUKKE VED KLIK PÅ LOOP ELEMENTER DER POPPER OP
+
+const loopClick = document.querySelector('.list');
+
+
+loopClick.addEventListener('click', () => {
+
+
+    //Spørg om window er under 800px
+    if ($(window).width() < 800) {
+        //Toggle Nav
+        nav.classList.toggle('nav-active');
+
+        //Animate Links (forEach går i gennem hvert link/Element)
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                //(hvis der allerede er en animation så fjernes den)
+                link.style.animation = ''
+
+                //REVERT BURGER TIL ORIGINAL
+                kolnav.classList.add('none');
+                mainnav.classList.remove('none');
+
+                omKarenLink.addEventListener('click', () => {
+                    mainKollDiv.classList.add('none');
+                    mainOmDiv.classList.remove('none');
+
+                    visKollektion();
+                })
+
+            } else {
+                //(hvis der ikke er en animation, så tilføjes den
+                link.style.animation = `navLinkFade 0.5s ease forwards ${(index / 15)+.3}s`;
+            }
+        });
+        //Burger Animation (her fjernes eller påsættes toggle-klassen fra css)
+        burger.classList.toggle('toggle');
+    }
+});

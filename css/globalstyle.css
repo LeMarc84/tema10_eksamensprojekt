@@ -99,10 +99,16 @@
         font-size: 1.3rem;
     }
 
+    #om h2 {
+        color: white;
+        padding: 10px;
+    }
+
     p {
         font-weight: 300;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
+        line-height: 1.6;
     }
 
     a {
@@ -176,7 +182,7 @@
         cursor: pointer;
     }
 
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:600px) {
         .phonename {
             display: none;
         }
@@ -237,7 +243,7 @@
             cursor: pointer;
             margin: 5px 0;
             padding: 0;
-            margin-left: 95vw;
+            margin-left: 90vw;
         }
     }
     /*****BURGER*****/
@@ -349,7 +355,7 @@
     .phonename {
         color: white;
         margin: 0;
-        padding: 0 15px 2px 60px;
+        padding: 0 15px 2px 8vw;
         transform: translateX(100%);
         transition: transform .8s ease-in;
         overflow: hidden;
@@ -708,47 +714,8 @@
     .some_wrapper b {
         display: none;
     }
-    /*
-#some .some_logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-}
 
-#some .some_wrapper .content_lft {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-} */
-    /*****Media Queries*****/
-    /*
-@media (min-width:1700px) {
-    .nav-links {
-        width: 25%;
-    }
-}
-
-@media (min-width:1630px) {
-    .nav-links {
-        width: 20%;
-    }
-}
-
-
-@media (min-width:1500px) {
-    .nav-links {
-        width: 15%;
-    }
-}
-
-@media (min-width:1300px) {
-    .nav-links {
-        width: 10%;
-    }
-}*/
-
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:600px) {
         .wrapper_0 {
             grid-template-areas: "header" "sidebar" "content" "bottom";
             grid-template-columns: 1fr
@@ -782,66 +749,9 @@
             color: white;
         }
     }
+    /*********** WRAPPERS *********/
 
-    @media (min-width:700px) {
-        #main .col_kollektioner {
-            width: 80vw;
-            margin: 0 auto;
-        }
-        .splash_container {
-            z-index: -1;
-        }
-        /*****NAVIGATION****/
-        .nav-links {
-            width: 15%;
-            margin-top: 0vh;
-        }
-        #logo {
-            position: absolute;
-            display: inline-flex;
-            z-index: 5;
-            margin: 5px 0 0 5px;
-        }
-        .logo2 {
-            width: 200px;
-            object-fit: contain;
-            padding: 0;
-            cursor: pointer;
-            z-index: 5;
-            margin-left: 0px;
-        }
-        #logo:hover .logo2 {
-            opacity: .8;
-            cursor: pointer;
-        }
-        .phonename {
-            padding: 2px 0 0 5vw;
-        }
-        #icons {
-            position: absolute;
-            display: flex;
-            align-content: space-between;
-            margin: 0;
-            right: 7vw;
-            z-index: 3;
-        }
-        .langUK,
-        .langDK {
-            width: 74px;
-            height: 26px;
-            padding: 0px;
-            cursor: pointer;
-            margin: 2px 10px 0 0x;
-        }
-        #shoppingcart img {
-            display: block;
-            width: 26px;
-            margin: 0 0 0 20px;
-        }
-        /*********** WRAPPERS *********/
-    }
-
-    @media (min-width:400px) {
+    @media (min-width:600px) {
         #some .some_wrapper b {
             display: block;
         }
@@ -883,7 +793,7 @@
             display: flex;
             align-content: space-between;
             margin: 0;
-            right: 17vw;
+            right: 10%;
             z-index: 3;
         }
         .langUK,
@@ -902,6 +812,84 @@
         /*********** WRAPPERS *********/
         .some_wrapper b {
             display: none;
+        }
+    }
+
+    @media (min-width:700px) {
+        #main .col_kollektioner {
+            width: 80vw;
+            margin: 0 auto;
+        }
+        .splash_container {
+            z-index: -1;
+        }
+        /*****NAVIGATION****/
+        .nav-links {
+            width: 30%;
+            margin-top: 0vh;
+        }
+        #logo {
+            position: absolute;
+            display: inline-flex;
+            z-index: 5;
+            margin: 5px 0 0 5px;
+        }
+        .logo2 {
+            width: 200px;
+            object-fit: contain;
+            padding: 0;
+            cursor: pointer;
+            z-index: 5;
+            margin-left: 0px;
+        }
+        #logo:hover .logo2 {
+            opacity: .8;
+            cursor: pointer;
+        }
+        .phonename {
+            position: relative;
+            padding: 2px 0 0 20vw;
+            right: 10%;
+        }
+        #icons {
+            position: absolute;
+            display: flex;
+            align-content: space-between;
+            margin: 0;
+            z-index: 3;
+        }
+        .langUK,
+        .langDK {
+            width: 74px;
+            height: 26px;
+            padding: 0px;
+            cursor: pointer;
+            margin: 2px 10px 0 0x;
+        }
+        #shoppingcart img {
+            display: block;
+            width: 26px;
+            margin: 0 0 0 20px;
+        }
+    }
+
+    @media screen and (min-width:1100px) {
+        .phonename {
+            padding: 2px 0 0 17.5vw;
+        }
+        .nav-links {
+            width: 20%;
+            margin-top: 0vh;
+        }
+    }
+
+    @media screen and (min-width:1400px) {
+        .phonename {
+            padding: 2px 0 0 15vw;
+        }
+        .nav-links {
+            width: 15%;
+            margin-top: 0vh;
         }
     }
     /*******ANIMATION*******/
