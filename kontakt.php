@@ -68,7 +68,7 @@
                 <div class="nav-links-main">
                     <div class="kollektion">
                         <li>
-                            <a href="#kollektion">Kollektioner</a>
+                            <a href="index.html#kollektion">Kollektioner</a>
                         </li>
                     </div>
                     <div class="kontakt">
@@ -78,7 +78,7 @@
                     </div>
                     <div class="om_karen">
                         <li class="om_karen">
-                            <a href="#om">Om Karen</a>
+                            <a href="index.html#om">Om Karen</a>
                         </li>
                     </div>
                 </div>
@@ -86,55 +86,55 @@
                     <div class="alle">
                         <li>
                             <!-- <b class="left valgt">◀</b> -->
-                            <a href="#kollektion" class="filter valgt" data-element="alle"> Alle</a>
+                            <a href="index.html#kollektion" class="filter valgt" data-element="alle"> Alle</a>
                         </li>
                     </div>
                     <div class="kjoler">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="2">Kjoler</a>
+                            <a href="index.html#kollektion" class="filter" data-element="2">Kjoler</a>
                         </li>
                     </div>
                     <div class="nederdele">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="3">Nederdele</a>
+                            <a href="index.html#kollektion" class="filter" data-element="3">Nederdele</a>
                         </li>
                     </div>
                     <div class="bukser">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="4">Bukser</a>
+                            <a href="index.html#kollektion" class="filter" data-element="4">Bukser</a>
                         </li>
                     </div>
                     <div class="overtoej">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="5">Overtøj</a>
+                            <a href="index.html#kollektion" class="filter" data-element="5">Overtøj</a>
                         </li>
                     </div>
                     <div class="kimonos">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="6">Kimonos</a>
+                            <a href="index.html#kollektion" class="filter" data-element="6">Kimonos</a>
                         </li>
                     </div>
                     <div class="t-shirts">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="7">T-shirts</a>
+                            <a href="index.html#kollektion" class="filter" data-element="7">T-shirts</a>
                         </li>
                     </div>
                     <div class="accessories">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="8">Accessories</a>
+                            <a href="index.html#kollektion" class="filter" data-element="8">Accessories</a>
                         </li>
                     </div>
                     <div class="unisex">
                         <li>
                             <!-- <b class="left none">◀</b>  -->
-                            <a href="#kollektion" class="filter" data-element="9">Unisex</a>
+                            <a href="index.html#kollektion" class="filter" data-element="9">Unisex</a>
                         </li>
                     </div>
                 </div>

@@ -112,6 +112,8 @@ label p {
     border-radius: 25px;
     padding: 15px;
     background-color: rgb(59, 154, 70, 0.45);
+    overflow: scroll;
+    scrollbar-darkshadow-color: violet;
 }
 
 #popup img {

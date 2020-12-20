@@ -25,7 +25,6 @@
 
     a {
         color: inherit;
-        /* blue colors for links too */
         text-decoration: inherit;
         /* no underline */
     }
@@ -116,25 +115,6 @@
         text-decoration: none;
         cursor: pointer;
         font-size: 1.1rem;
-    }
-    /******SCROLL EXPERIENCE******/
-
-    html,
-    body {
-        scroll-snap-type: mandatory;
-        scroll-snap-points-y: repeat(300px);
-        scroll-snap-type: y mandatory;
-        scroll-padding: 10%;
-    }
-
-    .splash_container,
-    article,
-    .wrapper_0,
-    .wrapper_1,
-    .wrapper_2,
-    .wrapper_3,
-    .some_wrapper {
-        scroll-snap-align: start;
     }
     /**********VIDEO********/
 
@@ -234,6 +214,7 @@
             justify-content: right;
             width: 26px;
             margin-left: 10vw;
+            cursor: pointer;
         }
         .burger {
             position: absolute;
@@ -246,17 +227,10 @@
             margin-left: 90vw;
         }
     }
-    /*****BURGER*****/
-    /* .burger {
-        position: absolute;
-        justify-content: center;
-        right: 0 auto;
-        display: block;
+
+    .burger {
         cursor: pointer;
-        margin: 5px 0;
-        padding: 0;
-        margin-left: 8vw;
-    } */
+    }
 
     .burger div {
         width: 26px;
@@ -264,6 +238,7 @@
         background-color: white;
         margin: 6px 6px;
         transition: all 0.5s ease;
+        cursor: pointer;
     }
     /*****BURGERLINES*****/
 
@@ -349,6 +324,13 @@
     #main .col_om_karen {
         width: 95vw;
         margin: 0 auto;
+    }
+
+    #kol_h1 {
+        text-align: center;
+        color: whitesmoke;
+        padding-bottom: 25px;
+        font-size: 2.5rem;
     }
     /*****COPENHAGEN ANIMATE*****/
 
@@ -524,7 +506,7 @@
         grid-template-areas: "header header header" "sidebar content content" "bottom bottom bottom";
         background-color: transparent;
         color: whitesmoke;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     #om h1 {
@@ -536,20 +518,20 @@
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "header header ......." "content content sidebar";
+        grid-template-areas: "....... header header" "content content sidebar";
         background-color: transparent;
         color: whitesmoke;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .wrapper_2 {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "....... header header" "content content content" "bottom bottom sidebar";
+        grid-template-areas: "header header ......." "sidebar content content" "bottom bottom bottom";
         background-color: transparent;
         color: whitesmoke;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .wrapper_2 h1 {
@@ -563,7 +545,7 @@
         grid-template-areas: "header header ......." "content content content";
         background-color: transparent;
         color: whitesmoke;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .box {
@@ -593,6 +575,7 @@
     .header {
         background-color: rgba(119, 209, 231, 0.45);
         color: whitesmoke;
+        margin-bottom: 10px;
     }
     /******some footer GRID******/
 
@@ -806,6 +789,7 @@
         }
         #shoppingcart img {
             display: block;
+            cursor: pointer;
             width: 26px;
             margin: 0 0 0 20px;
         }
@@ -822,6 +806,27 @@
         }
         .splash_container {
             z-index: -1;
+        }
+        /******SCROLL EXPERIENCE******/
+        html,
+        body {
+            scroll-snap-type: mandatory;
+            scroll-snap-points-y: repeat(500px);
+            scroll-snap-type: y mandatory;
+            scroll-padding-top: 25%;
+            scroll-behavior: smooth;
+        }
+        .splash_container,
+        article,
+        .wrapper_0,
+        .wrapper_1,
+        .wrapper_2,
+        .wrapper_3,
+        .some_wrapper,
+        .box,
+        .box_txt,
+        .box_bot {
+            scroll-snap-align: start;
         }
         /*****NAVIGATION****/
         .nav-links {

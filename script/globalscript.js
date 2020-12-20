@@ -9,6 +9,22 @@
 //     mainTopHide.classList.add('none');
 // })
 
+// const settings = {
+//     "async": true,
+//     "crossDomain": true,
+//     "url": "https://google-translate1.p.rapidapi.com/language/translate/v2/languages",
+//     "method": "GET",
+//     "headers": {
+//         "accept-encoding": "application/gzip",
+//         "x-rapidapi-key": "2834849f02msh76b51a984ecbe81p13f622jsn2b44f4421b1a",
+//         "x-rapidapi-host": "google-translate1.p.rapidapi.com"
+//     }
+// };
+
+// $.ajax(settings).done(function(response) {
+//     console.log(response);
+// });
+
 window.addEventListener('scroll', () => {
     const arrow = document.querySelector(".arrow_down");
     arrow.classList.add('fadeOut');
@@ -109,9 +125,7 @@ function visKollektion() {
 
 const loopClick = document.querySelector('.list');
 
-
 loopClick.addEventListener('click', () => {
-
 
     //Spørg om window er under 800px
     if ($(window).width() < 800) {
@@ -144,3 +158,13 @@ loopClick.addEventListener('click', () => {
         burger.classList.toggle('toggle');
     }
 });
+
+// KILL POPUP HVIS DER KLIKKES PÅ MENUEN IGEN
+// const popupLuk = document.querySelector("#popup");
+// const nav = document.querySelector('.nav-links');
+
+// nav.addEventListener('click', () => {
+//     if (popupLuk.classList.contains('block')) {
+//         popupLuk.classList.add = ('none');
+//     }
+// });

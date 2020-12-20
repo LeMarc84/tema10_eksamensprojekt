@@ -43,6 +43,8 @@
 
   document.querySelector("#luk").addEventListener("click", () => popup.style.display = "none");
 
+  //Vis PopUppen i detaljer
+
   function visDetaljer(element) {
       console.log(element);
 
@@ -52,11 +54,15 @@
       popup.querySelector("img").src = element.image.guid;
       popup.querySelector(".beskrivelse").innerHTML = element.beskrivelse;
 
+      //Lyt efter menuklik
+
   }
 
   function addEventListenerToButtons() {
       document.querySelectorAll(".filter").forEach((btn) => {
           btn.addEventListener("click", filterBTNs);
+          btn.addEventListener("click", lukPop);
+
       });
   }
 
@@ -74,3 +80,16 @@
   }
 
   loadJSON();
+
+
+
+  // KILL POPUP HVIS DER KLIKKES PÅ MENUEN IGEN
+
+  // lukPop();
+  function lukPop() {
+      console.log("Luk SÅ den popUp!!");
+
+      if (popup.style = 'block') {
+          popup.style.display = "none";
+      }
+  }
